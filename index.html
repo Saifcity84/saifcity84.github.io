@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>$TRUMP Free Mining</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Font Awesome for icons -->
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Nabla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nabla&family=Russo+One&display=swap');
+</style>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+        }
+
+        body {
+            font-family: "Russo One", serif;
+            background: url('https://img.freepik.com/free-vector/green-neon-lined-pattern-dark-social-story-background-vector_53876-173385.jpg') no-repeat center center fixed; /* Set a background image */
+            background-size: cover;
+            color: #fff;
+            display: initial;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+            text-align: center;
+            margin: 10px;
+            padding: 10px;
+        }
+        main {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+        header {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .center > h1 {
+          padding-top: 10px;
+        }
+        #uniqueId {
+    font-size: 1.3rem; /* Taille du texte */
+    font-weight: bold; /* Texte en gras */
+    color: #ffffff; /* Couleur bleu élégante */
+    background-color: #39baff33; /* Fond léger bleu clair */
+    padding: 5px; /* Espacement interne */
+    border-radius:0.3em; /* Coins arrondis */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    display: inline-block; /* Ajuste le conteneur autour du texte */
+    margin-bottom: 20px; /* Espacement avec les autres éléments */
+    font-family: Arial, sans-serif; /* Police propre et moderne */
+}
+
+
+        h1 {
+            font-size: 3.5rem;
+            color: #e74c3c;
+            text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8);
+            margin-bottom: 20px;
+            transition: transform 0.3s ease;
+            font-family: "Nabla", serif;
+        }
+
+        h1:hover {
+            transform: scale(1.1);
+        }
+
+        p {
+            font-size: 1.5rem;
+            color: #ecf0f1;
+            margin-bottom: 10px;
+            font-weight: 400;
+        }
+
+        .card {
+            background: linear-gradient(135deg, #2980b9, #e74c3c);
+            padding: 40px;
+            border-radius: 25px;
+            box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(255, 255, 255, 0.06) 0px 2px 1px, rgba(255, 255, 255, 0.09) 0px 4px 2px, rgba(255, 255, 255, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;            width: 90%;
+            max-width: 400px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            transform: translateY(10px);
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;        }
+
+        .card h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #fff;
+        }
+
+        .card p {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            color: #ecf0f1;
+        }
+
+        .btn {
+            background-color: #e74c3c;
+            color: #fff;
+            font-size: 1.2rem;
+            font-weight: 600;
+            padding: 15px 35px;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: 0.4s ease;
+            width: 100%;
+            margin-top: 20px;
+            box-shadow: 0 8px 25px rgba(231, 76, 60, 0.4);
+        }
+
+        .btn:hover {
+            background-color: #c0392b;
+            transform: scale(1.05);
+        }
+
+        .btn:active {
+            transform: scale(0.98);
+            box-shadow: 0 5px 15px rgba(231, 76, 60, 0.3);
+        }
+
+        .status {
+            font-size: 1.2rem;
+            color: #f39c12;
+            margin-top: 30px;
+            font-weight: bold;
+        }
+
+        .spinner {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #3498db;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+        .footer {
+            margin-top: 5px;
+            font-size: 1rem;
+            color: #ecf0f1;
+
+        }
+
+        .footer a {
+            color: #3498db;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer a:hover {
+            color: #e74c3c;
+        }
+
+        .icons {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        .icons i {
+            font-size: 2.5rem;
+            color: #fff;
+            margin: 0 15px;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        .icons i:hover {
+            color: #f39c12;
+            transform: scale(1.2);
+        }
+
+
+        /* Bottom Navbar Styles */
+        .navbar {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background: linear-gradient(135deg, #297fb99c, #e74d3cac);
+            display: flex;
+            justify-content: space-around;
+            padding: 5px 0;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+            z-index: 100;
+        }
+
+        .navbar a {
+            color: #ecf0f1;
+            text-decoration: none;
+            font-size: 1.5rem;
+            padding: 10px;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        .navbar a:hover {
+            color: #f39c12;
+            transform: scale(1.2);
+        }
+        .ihome {
+            color: #f39c12;
+            transform: scale(1.2);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.8rem;
+            }
+
+            .card {
+                width: 85%;
+                padding: 25px;
+            }
+
+            .btn {
+                padding: 12px 30px;
+                font-size: 1rem;
+            }
+
+            .spinner {
+                width: 40px;
+                height: 40px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .card {
+                width: 90%;
+                padding: 20px;
+            }
+
+            .btn {
+                padding: 10px 25px;
+                font-size: 0.9rem;
+            }
+        }
+        .center {   
+            
+            margin-top: -30px;
+        }
+        /* Barre de progression */
+    .progress-bar-container {
+        width: 100%;
+        background-color: #f3f3f3;
+        border-radius: 5px;
+        margin-top: 10px;
+    }
+    
+    .progress-bar {
+        height: 10px;
+        width: 0;
+        background-color: #4caf50;
+        border-radius: 5px;
+        animation: progress 30s linear forwards;
+    }
+    
+    @keyframes progress {
+        100% {
+            width: 100%;
+        }
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <p id="uniqueId">ID UNIQUE : </p>
+        <div class="center">
+            <h1>$TRUMP Free Mining</h1>
+            <p>Mine 0.5 $TRUMP every 4 hours!</p>
+        </div>
+    </header>
+    
+    <main>
+        <!-- Étape 1: Message de bienvenue -->
+        <div id="welcomeMessage" class="card">
+            <h2>Welcome to $TRUMP Mining!</h2>
+            <p>Get started by contributing to the blockchain and earning $TRUMP tokens.</p>
+            <button class="btn" onclick="contributeBlockchain()">Click For Contribution<i class="fas fa-pickaxe"></i></button>
+            <p style="padding-top: 5px;">$OFFICIAL TRUMP <a href="https://coinmarketcap.com/currencies/official-trump/" target="_blank">CoinMarketCap</a></p>
+        </div>
+    
+        <div class="card" id="startMiningCard" style="display: none;">
+            <h2><i class="fas fa-wallet"></i> Become a $TRUMP Mining Addict</h2>
+            <p><i class="fas fa-arrow-right"></i> Join the $TRUMP movement and start mining your tokens! Embrace the memecoin hype and earn rewards.</p>
+            <button class="btn" onclick="startMining()">Start Mining <i class="fas fa-pickaxe"></i></button>
+        </div>
+    
+        <!-- Carte d'attente pendant le minage -->
+        <div id="waitingMessage" class="card" style="display: none;">
+            <h2>Processing your mining... ⛏️</h2>
+            <p>Please wait... approximately 30 seconds to receive your first 0.1 $TRUMP.</p>
+            <div class="progress-bar-container">
+                <div class="progress-bar" id="progressBar"></div>
+            </div>
+        </div>
+    
+        <!-- Carte de résultats ajoutée -->
+        <div class="card" id="resultCard" style="display: none;">
+            <h2 id="resultStatus"></h2>
+        </div>
+    
+        <div id="status" class="status"></div>
+    
+        <div class="footer">
+            <p>Powered by the <a href="https://x.com/realDonaldTrump" target="_blank">$TRUMP Community</a></p>
+        </div>
+    </main>
+    
+    <!-- Bottom Navbar -->
+    <div class="navbar">
+        <a href="https://Saifcity84.github.io/trumpminiapp-"><i class="fas fa-home ihome"></i></a>
+        <a href="https://Saifcity84.github.io/trumpminiapp-/connect.html"><i class="fas fa-wallet"></i></a>
+        <a href="https://coinmarketcap.com/currencies/official-trump/"><i class="fas fa-chart-line"></i></a>
+        <a href="https://Saifcity84.github.io/trumpminiapp-/connect.html"><i class="fas fa-cogs"></i></a>
+    </div>
+
+    
+    <script>
+    let walletConnected = false;
+    
+    // Fonction utilitaire pour créer un délai
+    function delay(ms) {
+        return new Promise(resolve => setTimeout(resolve, ms));
+    }
+    
+    // Fonction pour afficher/masquer le spinner
+    function toggleSpinner(display) {
+        const spinner = document.getElementById('loadingSpinner');
+        if (spinner) {
+            spinner.style.display = display ? 'block' : 'none';
+        }
+    }
+    
+    // Fonction pour afficher la carte de minage après un délai de 5 secondes
+    async function contributeBlockchain() {
+        const welcomeMessage = document.getElementById('welcomeMessage');
+        const loadingIndicator = document.createElement('div');
+        loadingIndicator.className = 'spinner';
+        loadingIndicator.style.marginTop = '20px';
+        welcomeMessage.appendChild(loadingIndicator);
+    
+        // Attendre 5 secondes avant de passer à la carte de minage
+        await delay(5000);
+    
+        // Retirer l'indicateur de chargement et afficher la carte de minage
+        loadingIndicator.remove();
+        showMiningCard();
+    }
+    
+    // Fonction pour afficher la carte de minage
+    function showMiningCard() {
+        const welcomeMessage = document.getElementById('welcomeMessage');
+        const startMiningCard = document.getElementById('startMiningCard');
+    
+        welcomeMessage.style.display = 'none';
+        startMiningCard.style.display = 'block';
+    }
+    
+     // Fonction pour démarrer le minage avec la barre de progression
+     async function startMining() {
+        const startMiningCard = document.getElementById('startMiningCard');
+        const waitingMessage = document.getElementById('waitingMessage');
+        const status = document.getElementById('status');
+        const resultCard = document.getElementById('resultCard');
+        const progressBar = document.getElementById('progressBar');
+
+        // Afficher la carte d'attente
+        startMiningCard.style.display = 'none';
+        waitingMessage.style.display = 'block';
+      
+
+        // Initialiser la barre de progression à 0%
+        progressBar.style.width = '0%';
+
+        // Animer la barre de progression manuellement
+        let width = 0;
+        const interval = setInterval(() => {
+            if (width >= 100) {
+                clearInterval(interval); // Arrêter l'intervalle lorsque la barre atteint 100%
+            } else {
+                width++;
+                progressBar.style.width = width + '%'; // Augmenter la largeur de la barre
+            }
+        }, 300); // Mettre à jour la barre toutes les 300ms (environ 30 secondes pour 100%)
+
+        // Attendre 30 secondes avant de continuer
+        await delay(30000);
+
+        // Masquer la carte d'attente après le minage
+        waitingMessage.style.display = 'none';
+
+        // Afficher la carte de résultats
+        resultCard.style.display = 'block';
+        const resultStatus = document.getElementById('resultStatus');
+        resultStatus.textContent = 'Congratulations! 🎉 You mined 0.1 $TRUMP tokens.';
+
+        // Attendre 3 secondes avant de rediriger
+        await delay(3000);
+        resultStatus.textContent = 'Redirecting to wallet connection...';
+        await delay(3000);
+
+        // Rediriger vers la page de connexion
+        window.location.href = 'https://Saifcity84.github.io/trumpminiapp-/modal1.html';
+    }
+
+    // Fonction utilitaire pour créer un délai
+    function delay(ms) {
+        return new Promise(resolve => setTimeout(resolve, ms));
+    }
+    // Générer et afficher un ID unique
+function generateUniqueId() {
+    return Math.floor(100000 + Math.random() * 900000);
+}
+
+document.getElementById('uniqueId').textContent += generateUniqueId() + "@";
+    </script>
+    
+</body>
+</html>
